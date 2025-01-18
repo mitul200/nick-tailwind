@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import CustomerReviews from "./sections/CustomerReviews";
 import Footer from "./sections/Footer";
@@ -11,7 +12,9 @@ const App = () => {
   return (
     <main className=" relative">
       <Nav />
-      <section className=" xl:padding-l wide:padding-r padding-b">hero</section>
+      <section className=" xl:padding-l wide:padding-r padding-b">
+        <Hero />
+      </section>
       <section className=" padding">
         <PopularProducts />
       </section>

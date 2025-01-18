@@ -15,16 +15,25 @@ const Nav = () => {
           />
         </a>
         <ul className="flex flex-1 justify-center gap-16 items-center max-lg:hidden">
-          {navLinks.map((items) => (
-            <a
-              key={items.label}
-              className="text-lg text-slate-gray font-monts-errat leading-normal"
-              href=""
-            >
-              {items.label}
-            </a>
+          {navLinks.map((item) => (
+            <li key={item.label}>
+              <a
+                className="text-lg text-slate-gray font-monts-errat leading-normal"
+                href={item.href}
+              >
+                {item.label}
+              </a>
+            </li>
           ))}
         </ul>
+        <div className=" hidden max-lg:block">
+          <img
+            src="/src//assets/icons/hamburger.svg"
+            height={25}
+            width={25}
+            alt=""
+          />
+        </div>
       </nav>
     </header>
   );
